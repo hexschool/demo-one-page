@@ -452,8 +452,8 @@ $(document).ready(function(){
     var link = $(this).attr('href');
     var title = $(this).attr('title');
     mixpanel.track('ClickLink',{
-      'link': link,
-      'title': title,
+      'link': link || '',
+      'title': title || '',
       'pageTitle': pageTitle
     });
   });
