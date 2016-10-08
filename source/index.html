@@ -17,8 +17,9 @@
   <title>打造一頁式金流商務網頁 - 六角學院</title>
   <link rel="stylesheet" href="stylesheets/all.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <style>
-  @import 'https://fonts.googleapis.com/css?family=Roboto:400,100,900';
+  @import 'https://fonts.googleapis.com/css?family=Roboto:400,100,900&effect=anaglyph';
   .text-clock {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -70,14 +71,29 @@
 
   <!-- header -->
   <!-- Background Made by Carlos Aguilar. -->
-  <header class="page-header mp-scroll" data-mp-text="Header"  style="background-image: url(images/banner_icons.png), url(images/footer_lodyas.png);">
-    <div class="center-block">
-      <!-- <img src="images/demo.png" alt="" width="300" height="200" class="img-fluid"> -->
-      <h1 class="text-center m-b-0" itemprop="name">打造<br>一頁式金流商務網頁</h1>
+  <header class="page-header mp-scroll" data-mp-text="Header"  style="margin-top: 51px;">
+    <div class="homepage-hero-module">
+      <div class="video-container">
+        <div class="center-block" style="position: relative; z-index: 2;">
+          <!-- <img src="images/demo.png" alt="" width="300" height="200" class="img-fluid"> -->
+          <h1 class="text-center m-b-0 font-effect-anaglyph" itemprop="name">打造<br>一頁式金流商務網頁</h1>
+        </div>
+
+        <div class="filter"></div>
+        <video autoplay loop class="fillWidth">
+            <source src="video/MP4/Typing-numbers.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="video/WEBM/Typing-numbers.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+        <div class="poster hidden">
+            <img src="video/Snapshots/Typing-numbers.jpg" alt="">
+        </div>
+      </div>
+      <div class="bottom-block">
+        <img src="images/shopping_bag.png" alt="" width="600" class="img-fluid">
+      </div>
+
     </div>
-    <div class="bottom-block">
-      <img src="images/shopping_bag.png" alt="" width="600" class="img-fluid">
-    </div>
+
   </header>
 
   <div class="text-center section">
@@ -98,7 +114,7 @@
             <div class="m-x-2">
               <img src="images/feature-01.png" alt="" width="400" height="280" class="img-fluid">
             </div>
-            <div>
+            <div class="wow fadeInUp">
               <h3>一步一步學到會</h3>
               <p>在這課程中，你將學會如何將手中的網站上線至雲端空間，並且加入金流、Google 分析、社群整合，所有流程在影片中都會有詳盡介紹，怕一次沒看懂嗎？沒關係，你可以反覆看好幾次，甚至詢問我們專業講師，您將獲得滿意得解答。</p>
             </div>
@@ -109,7 +125,7 @@
             <div class="m-x-2">
               <img src="images/feature-02.png" alt="" width="400" height="280" class="img-fluid">
             </div>
-            <div>
+            <div class="wow fadeInUp">
               <h3>小成本，大商機</h3>
               <p>2016 年開始，台灣進入了電商時代，並且在第三支付的發展下所有人都可以販售自己的產品，做生意不再與高成本畫上等號。本線上課程你只要花一點小錢，將能夠學會目前主流的線上交易模式，還在使用傳統銷售模式嗎？透過網路銷售吧！</p>
             </div>
@@ -120,7 +136,7 @@
             <div class="m-x-2">
               <img src="images/feature-03.png" alt="" width="400" height="280" class="img-fluid">
             </div>
-            <div>
+            <div class="wow fadeInUp">
               <h3>傳授經驗小技巧</h3>
               <p>學會了如何建置網頁銷售，我們還會與您分享怎麼改善頁面上的流程，一些頁面上的小沒角將是電商營收百萬的關鍵。還在自己踩地雷嗎？我們將已經踩過的過錯與您分享，讓您直接邁向正確的軌道。</p>
             </div>
@@ -131,8 +147,13 @@
   </section>
 
   <!-- 可以學到什麼 -->
-  <section class="section bg-darker mp-scroll" data-mp-text="可以學到什麼" id="course">
-    <div class="container">
+  <section class="section bg-darker mp-scroll"
+    style="background-image: url(images/arrow_bg.png);"
+    data-0="background-position: 0 0px"
+    data-300-top="background-position: 0 0px"
+    data-end="background-position: 0 -800px"
+    data-mp-text="可以學到什麼" id="course">
+    <div class="container" style="overflow: hidden">
       <h2 class="text-center">這堂課程，可以學到什麼？</h2>
       <div class="timeline-section">
         <div class="timeline-waypoint">
@@ -148,7 +169,7 @@
             </div>
             <div class="col-half">
               <div class="p-x-3">
-                <img src="images/course-ga.png" alt="" width="450" height="260" class="img-fluid">
+                <img src="images/course-ga.png" alt="" width="450" height="260" class="img-fluid wow fadeInRight">
               </div>
             </div>
           </div>
@@ -158,7 +179,7 @@
           <div class="row">
             <div class="col-half">
               <div class="p-x-3">
-                <img src="images/course-money.png" alt="" width="450" height="260" class="img-fluid">
+                <img src="images/course-money.png" alt="" width="450" height="260" class="img-fluid wow fadeInLeft">
               </div>
             </div>
             <div class="col-half">
@@ -184,7 +205,7 @@
             </div>
             <div class="col-half">
               <div class="p-x-3">
-                <img src="images/course-social.png" alt="" width="450" height="260" class="img-fluid">
+                <img src="images/course-social.png" alt="" width="450" height="260" class="img-fluid wow fadeInRight">
               </div>
             </div>
           </div>
@@ -247,9 +268,9 @@
             </ol>
             <p>課程連結：<a href="https://www.udemy.com/landingpage/">Udemy 課程連結</a></p>
             <div class="m-y-1">
-              <a href="#" class="btn btn-radius btn-accent-outline btn-lg" title="點選購買連結">
+              <a href="#" class="btn btn-radius btn-accent-outline btn-lg btn-ani" title="點選購買連結">
                 <span class="fa fa-diamond"></span>
-                限時特價 <span class="text-money">NT$ <em itemprop="price">880</em></span>
+                限時特價 <span class="text-money">NT$ <em itemprop="price">1250</em></span>
                 <span class="fa fa-diamond"></span>
               </a>
             </div>
@@ -281,7 +302,7 @@
         <div class="col-half col-half-center">
           <div class="card">
             <div class="card-head">
-              <img src="images/html_jquery_onepage.png" class="img-fluid" alt="">
+              <img src="images/html_jquery_onepage.png" class="img-fluid wow flipInX" alt="">
             </div>
             <div class="card-body text-center">
               <h4 class="text-center">
@@ -299,12 +320,12 @@
               </p>
               <a href="#" class="btn btn-radius btn-accent-outline btn-lg">
                 <span class="fa fa-diamond"></span>
-                限時特價 <span class="text-money">NT$ 2880</span>
+                限時特價 <span class="text-money">NT$ 3880</span>
                 <span class="fa fa-diamond"></span>
               </a>
               <h5 class="text-xs-center m-t-1 m-b-0">
                 <span class="fa fa-hand-peace-o text-warning"></span>
-                <small>(現省 <span class="text-danger">NT$ 1920 </span>)</small>
+                <small>(現省 <span class="text-danger">NT$ 920 </span>)</small>
                 <span class="fa fa-hand-peace-o text-warning"></span>
               </h5>
             </div>
@@ -429,9 +450,13 @@
 
 <!-- javascript plugin -->
 <script src="javascripts/vendors/jquery.countdown.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
 
 <!-- custom -->
+<link rel="stylesheet" href="stylesheets/video.css">
 <script src="javascripts/clock.js"></script>
+<script src="javascripts/video.js"></script>
 
 <!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
 0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
@@ -483,6 +508,28 @@ $(document).ready(function(){
   });
 
 });
+</script>
+<script>
+// animateCss
+$.fn.extend({
+  animateCss: function (animationName) {
+      var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+      this.addClass('animated ' + animationName).one(animationEnd, function() {
+          $(this).removeClass('animated ' + animationName);
+      });
+  }
+});
+$(document).ready(function(){
+  $('.btn-ani').on('mouseenter', function(){
+    $(this).animateCss('pulse');
+  });
+})
+
+// wow
+new WOW().init();
+
+// skrollr
+var s = skrollr.init();
 </script>
 
 </body>
