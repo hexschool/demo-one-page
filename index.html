@@ -10,13 +10,14 @@
   <meta property="og:site_name" content="打造一頁式金流商務網頁" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="zh_TW" />
-  <meta property="og:url" content="http://test-one-page.hexschool.com/" />
+  <meta property="og:url" content="https://test-one-page.hexschool.com/" />
 
   <link rel="icon" href="images/favicon.ico">
 
   <title>打造一頁式金流商務網頁 - 六角學院</title>
   <link rel="stylesheet" href="stylesheets/all.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <style>
   @import 'https://fonts.googleapis.com/css?family=Roboto:400,100,900';
   .text-clock {
@@ -30,12 +31,12 @@
   </style>
 </head>
 <body>
-<div class="wrap" itemscope itemtype="http://schema.org/Product">
+<div class="wrap" itemscope itemtype="https://schema.org/Product">
   <!-- navbar -->
   <nav class="navbar navbar-default">
     <div class="container">
       <a href="/" class="logo pull-left">
-        <svg width="134px" height="46px" viewBox="0 0 134 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="img-fluid">
+        <svg width="134px" height="46px" viewBox="0 0 134 46" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" class="img-fluid">
             <title>logo_h46</title>
             <defs></defs>
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -56,6 +57,7 @@
       </a>
       <ul class="nav-menu pull-right clearfix">
         <li><a href="#course" title="可以學到什麼">
+            <span class="fa fa-book fa-spin"></span>
             可以學到什麼
           </a>
         </li>
@@ -96,7 +98,7 @@
         <div class="col-three-one">
           <div>
             <div class="m-x-2">
-              <img src="images/feature-01.png" alt="" width="400" height="280" class="img-fluid">
+              <img src="images/feature-01.png" alt="" width="400" height="280" class="img-fluid wow bounceIn">
             </div>
             <div>
               <h3>一步一步學到會</h3>
@@ -107,7 +109,7 @@
         <div class="col-three-one">
           <div>
             <div class="m-x-2">
-              <img src="images/feature-02.png" alt="" width="400" height="280" class="img-fluid">
+              <img src="images/feature-02.png" alt="" width="400" height="280" class="img-fluid wow fadeInLeft">
             </div>
             <div>
               <h3>小成本，大商機</h3>
@@ -131,7 +133,11 @@
   </section>
 
   <!-- 可以學到什麼 -->
-  <section class="section bg-darker mp-scroll" data-mp-text="可以學到什麼" id="course">
+  <section class="section bg-darker mp-scroll"
+   data-mp-text="可以學到什麼" id="course"
+   data-bottom-top="background-position: 0px 0px"
+   data-top-bottom="background-position: 0px -500px"
+   style="background-image: url(images/arrow_bg.png)">
     <div class="container">
       <h2 class="text-center">這堂課程，可以學到什麼？</h2>
       <div class="timeline-section">
@@ -247,7 +253,7 @@
             </ol>
             <p>課程連結：<a href="https://www.udemy.com/landingpage/">Udemy 課程連結</a></p>
             <div class="m-y-1">
-              <a href="#" class="btn btn-radius btn-accent-outline btn-lg" title="點選購買連結">
+              <a id="button" href="#" class="btn btn-radius btn-accent-outline btn-lg" title="點選購買連結">
                 <span class="fa fa-diamond"></span>
                 限時特價 <span class="text-money">NT$ <em itemprop="price">880</em></span>
                 <span class="fa fa-diamond"></span>
@@ -319,7 +325,7 @@
     <div class="container">
       <div class="row">
         <div class="col-half col-half-center">
-          <form action="http://www.newsleopard.com/mailverify.htm?x=000000005439ddb70154486675980d63" target="popupwindow" method="post" onsubmit="window.open('', 'popupwindow', 'scrollbars=yes,width=350,height=115');return true" class="text-xs-center">
+          <form action="https://www.newsleopard.com/mailverify.htm?x=000000005439ddb70154486675980d63" target="popupwindow" method="post" onsubmit="window.open('', 'popupwindow', 'scrollbars=yes,width=350,height=115');return true" class="text-xs-center">
             <h2 class="text-center">
               <span class="fa fa-bookmark-o"></span>
               新課程通知
@@ -388,7 +394,7 @@
           <div class="col-three-one">
             <h2>Contact</h2>
             <address class="margin-bottom-40">
-              六角學院官網: <a href="http://www.hexschool.com" target="_blank">http://www.hexschool.com</a> <br>
+              六角學院官網: <a href="https://www.hexschool.com" target="_blank">https://www.hexschool.com</a> <br>
               Facebook: <a href="https://www.facebook.com/hexschool" target="_blank">六角學院 粉絲團</a> <br>
               Email: <a href="mailto:service@hexschool.com">service@hexschool.com</a><br>
             </address>
@@ -402,7 +408,7 @@
   </footer>
 
   <div class="fab-fixed-wrap">
-      <a href="http://m.me/hexschool" target="_blank" class="fab fab-facebook" title="Facebook 客服">
+      <a href="https://m.me/hexschool" target="_blank" class="fab fab-facebook" title="Facebook 客服">
       <span class="h2">
         <span class="fa fa-comments-o"></span>
       </span>
@@ -438,6 +444,29 @@
 for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
 mixpanel.init("af0a27071dc94bfed0e5b3eb613ed9fa");</script><!-- end Mixpanel -->
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
+<script src="
+https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+<script>
+  $.fn.extend({
+      animateCss: function (animationName) {
+          var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+          this.addClass('animated ' + animationName).one(animationEnd, function() {
+              $(this).removeClass('animated ' + animationName);
+          });
+      }
+  });
+  $(document).ready(function(){
+    $('#button').mouseenter(function(e){
+      $(this).animateCss('animated pulse');
+    });
+
+  });
+  new WOW().init();
+  var s = skrollr.init();
+</script>
+
 <script type="text/javascript">
 // Mixpanel 範例
 $(document).ready(function(){
@@ -452,8 +481,8 @@ $(document).ready(function(){
     var link = $(this).attr('href');
     var title = $(this).attr('title');
     mixpanel.track('ClickLink',{
-      'link': link,
-      'title': title,
+      'link': link || '',
+      'title': title || '',
       'pageTitle': pageTitle
     });
   });
